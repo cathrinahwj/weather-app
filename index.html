@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link href="https://emoji-css.afeld.me/emoji.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/c7db7324d6.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="src/styles.css">
+  </head>
+  <body>
+    <div id="app"></div>
+    <div class="container">
+      <div class="card w-100">
+        <div class="card-body">
+          <form class="form-inline" id="form-inline">
+            <div class="form-group">
+              <input type="text" class="form-control" placeholder="Enter a city" id="city-input">
+            </div>
+            <button type="submit" class="btn btn-info btn-sm">Search</button>
+    
+          </form>
+    
+          </br>
+    
+          <div class="container">
+            <div class="row">
+              <h1 class="col-"> <i class="em em-sunny" aria-role="presentation" aria-label="BLACK SUN WITH RAYS"></i></h1>
+              <h1 class="col-sm" class="temperature" id="temperature"></h1>
+              <div class="col-" class="units">°C</div>|
+              <div class="col-3"><a href="#" id="fahrenheit-link">°F</a></div>
+    
+              <h2 class="col-6" id="city"></h2>
+              <h2 class="col-6" id="description"></h2>
+    
+              <h3 class="col-6" id="date"></h3>
+    
+    
+              </br>
+    
+              <div class="row">
+                <div class="col-sm">Humidity: <span id="humidity"></span></div>
+                <div class="col-sm">Wind: <span id="wind"></span> km/h</div>
+                <div class="w-100"></div>
+                <div class="col-sm">64%</div>
+                <div class="col-sm">s 19km/hr</div>
+              </div>
+              <div class="col-1"></div>
+    
+              <div class="col-sm">
+                <button class="btn btn-info w-100" id="current-location-button">
+                  Current
+                </button>
+    
+    
+    
+    
+              </div>
+              </br>
+              </br>
+    
+    
+              <div class="card-deck">
+                <div class="card border-info mb-3" style="max-width: 18rem;">
+                  <div class="card-header">Mon
+                    <div class="card-body">
+                      <h5 class="card-title"><i class="fas fa-sun"></i></h5>
+                      <p class="card-text">21°C</p>
+    
+    
+                    </div>
+                  </div>
+                </div>
+                <div class="card border-info mb-3" style="max-width: 18rem;">
+                  <div class="card-header">Tues
+                    <div class="card-body">
+                      <h5 class="card-title"><i class="fas fa-sun"></i></h5>
+                      <p class="card-text">19°C</p>
+    
+                    </div>
+                  </div>
+                </div>
+                <div class="card border-info mb-3" style="max-width: 20rem;">
+                  <div class="card-header">Wed
+                    <div class="card-body">
+                      <h5 class="card-title"><i class="fas fa-sun"></i></h5>
+                      <p class="card-text">21°C</p>
+    
+                    </div>
+                  </div>
+                </div>
+                <div class="card border-info mb-3" style="max-width: 18rem;">
+                  <div class="card-header">Thur
+                    <div class="card-body">
+                      <h5 class="card-title"><i class="fas fa-sun"></i></h5>
+                      <p class="card-text">23°C</p>
+    
+                    </div>
+                  </div>
+                </div>
+                <div class="card border-info mb-3" style="max-width: 18rem;">
+                  <div class="card-header">Fri
+                    <div class="card-body">
+                      <h5 class="card-title"><i class="fas fa-cloud-sun"></i></h5>
+                      <p class="card-text">23°C</p>
+    
+                    </div>
+                  </div>
+                </div>
+                <div class="card border-info mb-3" style="max-width: 18rem;">
+                  <div class="card-header">Sat
+                    <div class="card-body">
+                      <h5 class="card-title"><i class="fas fa-sun"></i></h5>
+                      <p class="card-text">17°C</p>
+    
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    
+    
+    
+    
+    
+        <script src="src/index.js">
+        </script>
+  </body>
+</html>
